@@ -22,12 +22,14 @@ body {
 
 .menu ul {
     padding: 50px;
-    margin-left: 50px;
-    width: 1000px;
+    /*margin-left: 50px;*/
+    max-width: 30%;
 
     list-style: none;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
     justify-items: center;
 }
 
@@ -41,7 +43,7 @@ a {
 }
 
 .menu li {
-    font-size: 30px;
+    font-size: 2em;
     padding: 0 10px;
 }
 
@@ -89,6 +91,7 @@ a {
     justify-content: start;
     border-top: 1px solid black;
     padding: 10px;
+
 
     min-height: 100%;
     background-color: #00ffd0;
