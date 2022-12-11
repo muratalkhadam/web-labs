@@ -28,3 +28,5 @@ footer {
     text-align: center;
     color: rgb(131, 2, 173);
 }
+
+@media max-width 500px
