@@ -1,0 +1,40 @@
+html,
+body {
+    height: 100%;
+}
+
+table {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    font-family: 'Courier New', Courier, cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    height: 100%;
+    width: 100%;
+}
+
+.left {
+}
+
+.footer {
+    height: 20%;
+}
+
+.cell-25 {
+    max-width: 40%;
+}
+
+.cell-25-table {
+    height: 100%;
+}
+
+.main-3 {
+    width: auto;
+}
