@@ -135,7 +135,7 @@ footer {
     width: 325px;
 }
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
     header {
         padding-left: 13%;
         padding-right: 13%;
