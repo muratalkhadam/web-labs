@@ -1,9 +1,11 @@
 html,
 body {
     height: 100%;
+    margin: 0;
 }
 
 table {
+    margin: 0;
     height: 100%;
     width: 100%;
 }
@@ -20,15 +22,34 @@ table {
     width: 100%;
 }
 
-.left {
-}
-
 .footer {
-    height: 20%;
+    align-items: center;
+
+    background-color: #00ffd0;
 }
 
 .cell-25 {
-    max-width: 40%;
+    border-right: black solid;
+}
+
+.item-5,
+.item-2 {
+    vertical-align: top;
+}
+
+.item-5 {
+    border-top: black solid;
+}
+
+.item-5 > p,
+.item-2 > p,
+.right-4 > p {
+    padding: 15px;
+    text-align: justify;
+}
+
+.cell-25 {
+    min-width: 400px;
 }
 
 .cell-25-table {
@@ -36,5 +57,82 @@ table {
 }
 
 .main-3 {
-    width: auto;
+    border-bottom: black solid;
+    vertical-align: top;
+
+    min-width: 500px;
+}
+
+.right-4 {
+    vertical-align: top;
+    width: 325px;
+}
+
+.header {
+    height: 100px;
+    align-items: center;
+    border-bottom: 2px solid black;
+    background-color: rgba(0, 178, 255, 0.82);
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu ul {
+    padding: 50px;
+    list-style: none;
+}
+
+.x-label h2 {
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    min-width: 100px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.x-label {
+    width: 0px;
+}
+
+a {
+    font-size: 2em;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+a:hover {
+    color: red;
+}
+
+.left-235 {
+    border: solid black;
+}
+
+.cell-25 {
+    border-bottom: black solid;
+    width: 390px;
+}
+
+.footer h3 {
+    margin: 8px 20px;
+
+    padding: 30px;
+    font-size: 16px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.main-3 img {
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    border-right: black solid;
 }

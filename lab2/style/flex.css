@@ -20,6 +20,7 @@ body {
 
 .main-container {
     min-height: 100%;
+    flex: 1;
 }
 
 .header {
@@ -35,13 +36,10 @@ body {
 
 .menu ul {
     padding: 50px;
-    /*min-width: 50%;*/
+
     list-style: none;
     display: flex;
     flex-direction: row;
-
-    justify-content: space-between;
-    /*justify-items: center;*/
 }
 
 a {
@@ -55,6 +53,7 @@ a:hover {
 }
 
 .right {
+    max-width: 17%;
     border-left: black solid;
 }
 
@@ -64,12 +63,17 @@ a:hover {
     flex-direction: column;
 }
 
+.menu > ul {
+    gap: 10px;
+}
+
 .content {
     display: flex;
     flex-direction: row;
 
+    flex: 1;
     overflow: hidden;
-    /*min-height: 100%;*/
+
 }
 
 .main-container {
@@ -81,25 +85,29 @@ a:hover {
     display: flex;
     flex-direction: row;
 
-    /*min-height: 100%;*/
-    /*min-width: auto;*/
     min-height: 85%;
     overflow: hidden;
 }
 
-.article img {
-    /*padding: 50px;*/
-    /*min-height: aut*/
+.article {
+    width: 100%;
+}
 
-    /*min-width: 1050px;*/
-    height: 100%;
+.article img {
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .left {
-    min-width: 400px;
-    border-right: black solid;
+    min-width: 100px;
+    max-width: 400px;
 
+    border-right: black solid;
     display: flex;
+
     flex-direction: column;
 }
 
@@ -111,12 +119,6 @@ a:hover {
 .left-bottom {
     height: 50%;
 }
-
-/*.left-top img,*/
-/*.left-bottom img{*/
-/*    min-height: 100%;*/
-/*    max-width: 100%;*/
-/*}*/
 
 .x-label h2{
     margin: 10px;
@@ -132,13 +134,11 @@ a:hover {
 .footer {
     display: flex;
     flex-direction: row;
+    flex: 1;
 
-    /*justify-content: space-between;*/
     padding: 10px;
 
-    /*min-height: 15%;*/
     height: auto;
-    /*max-height: 100px;*/
 
     border-top: black solid;
     background-color: #00ffd0;
@@ -146,6 +146,7 @@ a:hover {
 
 .footer > h3 {
     margin-right: 20px;
+    margin-left: 20px;
     padding: 30px;
     font-size: 16px;
     border: 1px solid black;
@@ -163,55 +164,4 @@ a:hover {
     padding: 15px;
     text-align: justify;
 
-}
-
-/*.content {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*}*/
-
-/*.main-container {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
-
-/*.article-container {*/
-/*    max-width: 100%;*/
-
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*}*/
-
-/*.left img {*/
-/*    min-height: 100%;*/
-/*    max-width: 100%;*/
-/*}*/
-/*.left {*/
-/*    min-width: 300px;*/
-/*    width: 400px;*/
-/*    max-height: 400px;*/
-
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
-
-
-/*.left-top{*/
-/*    min-height: 50%;*/
-
-/*    display: flex;*/
-/*    flex: 0 0;*/
-/*}*/
-
-/*.left-bottom {*/
-/*    min-height: 50%;*/
-
-/*    display: flex;*/
-/*    flex: 0 0;*/
-/*}*/
-
-@media only screen and (max-width: 700px) {
-    .menu ul{
-        flex-direction: column;
-    }
 }
